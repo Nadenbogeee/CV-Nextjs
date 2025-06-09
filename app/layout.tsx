@@ -39,8 +39,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: [{ url: "/favicon.ico" }, { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" }, { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" }],
-    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
+    icon: [{ url: "/icon-web.png", sizes: "any", type: "image/png" }],
+    apple: [{ url: "/icon-web.png", sizes: "any", type: "image/png" }],
   },
   openGraph: {
     title: "Yoga Naden - Fullstack Developer",
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Yoga Naden - Fullstack Developer",
     description: "Junior Fullstack Developer specializing in React, Angular, and TypeScript",
-    images: ["/og-image.png"],
+    images: ["/icon-web.png"],
   },
   verification: {
     google: "4T0Johnr9esEktz1w8CpRdZP05YF4mshIMrpa5ZJ9qM",
