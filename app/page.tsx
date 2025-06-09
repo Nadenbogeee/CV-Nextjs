@@ -19,15 +19,15 @@ export default function Resume() {
     <div className="min-h-screen bg-white font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Header Section - Dark Blue */}
-      <div className="bg-slate-700 text-white px-8 py-6">
+      <div className="bg-slate-700 text-white px-4 sm:px-6 lg:px-8 py-6">
         <div className="max-w-7xl mx-auto">
-          <h1 className="text-3xl font-bold mb-3 text-center">Yoga Naden | Fullstack Developer</h1>
-          <div className="text-sm leading-relaxed max-w-5xl mb-4 min-w-full text-justify px-20">
+          <h1 className="text-2xl sm:text-3xl font-bold mb-3 text-center">Yoga Naden | Fullstack Developer</h1>
+          <div className="text-xs sm:text-sm leading-relaxed max-w-5xl mb-4 min-w-full text-justify px-4 sm:px-8 lg:px-20">
             Junior Developer With Hands-On Experience In UI And System Design Using Figma And Other UI Design Tools. I Have Practical Experience In Developing Websites Using Javascript, Typescript, ReactJS, Angular, Laravel, CodeIgniter,
             HTML, CSS, Tailwind, Bootstrap, NextJs, Angular Material, And Currently I&apos;m Learning NextJs And Looking For An Opportunity To Work As NextJs Developer.
           </div>
 
-          <div className="flex items-center gap-8 text-sm justify-evenly">
+          <div className="flex flex-col sm:flex-row items-center gap-4 sm:gap-8 text-xs sm:text-sm justify-center sm:justify-evenly">
             <div className="flex items-center gap-2">
               <Phone size={16} />
               <span>089510437648</span>
@@ -45,26 +45,26 @@ export default function Resume() {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-7xl mx-auto px-8 py-6">
-        <div className="grid grid-cols-12 gap-8">
-          {/* Left Column - 7 columns */}
-          <div className="col-span-7 space-y-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
+          {/* Left Column - 7 columns on desktop, full width on mobile */}
+          <div className="lg:col-span-7 space-y-6">
             {/* Projects Section */}
             <div>
-              <h2 className="text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">PERSONAL PROJECTS</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">PERSONAL PROJECTS</h2>
 
               <div className="space-y-5">
                 <div>
-                  <h3 className="font-bold text-slate-800 mb-2">WEB E-LEARNING (FRONT-END) React - Express - Node</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed">
+                  <h3 className="font-bold text-slate-800 mb-2 text-sm sm:text-base">WEB E-LEARNING (FRONT-END) React - Express - Node</h3>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
                     Developed The Front-End Of A Web-Based E-learning System With A Gamification Approach, Utilizing User-Centered Design (UCD) Methodology. I Implemented the Interface Using ReactJS With React-Bootstrap and Material UI,
                     Incorporating React Router For Seamless Navigation And Vue For Optimized Development. Styled With Custom CSS To Enhance User Experience.
                   </p>
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-slate-800 mb-2">LAUNDRY WEB (FRONT-END) - React</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed mb-2">
+                  <h3 className="font-bold text-slate-800 mb-2 text-sm sm:text-base">LAUNDRY WEB (FRONT-END) - React</h3>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-2">
                     Complete Laundry Website Project Including Comprehensive <span className="font-semibold">Product Management</span> (create, read, update, delete products), <span className="font-semibold">Customer Management</span>
                     (create, read, update, delete customers), And <span className="font-semibold">Transaction Management</span>
                     (create and read transactions, with data fetched from a server-side API). In this Project, I utilized ReactJS, leveraging React Context for state management, Tailwind CSS for utility-first styling, and Next UI for
@@ -73,11 +73,11 @@ export default function Resume() {
                 </div>
 
                 <div>
-                  <h3 className="font-bold text-slate-800 mb-2">BACHELOR&apos;S FINAL PROJECT - Python</h3>
-                  <p className="text-sm text-slate-600 leading-relaxed mb-2">
+                  <h3 className="font-bold text-slate-800 mb-2 text-sm sm:text-base">BACHELOR&apos;S FINAL PROJECT - Python</h3>
+                  <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-2">
                     Product Placement In E-Commerce Based on Consumer Behavior Using the Eclat Algorithm (Aimed at discovering transaction patterns, such as when a customer buys item A, they are likely to also purchase item B)
                   </p>
-                  <ul className="text-sm text-slate-600 space-y-1 ml-4">
+                  <ul className="text-xs sm:text-sm text-slate-600 space-y-1 ml-4">
                     <li>• Applied Market Basket Analysis and the Eclat Association Algorithm</li>
                     <li>• Designed product layout to enhance sales</li>
                     <li>• Analyzed transaction patterns in e-commerce data</li>
@@ -90,8 +90,8 @@ export default function Resume() {
 
             {/* Tech Stack Section */}
             <div>
-              <h2 className="text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">TECH STACK / CURRENTLY WORKING WITH</h2>
-              <div className="flex flex-wrap gap-4">
+              <h2 className="text-lg sm:text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">TECH STACK / CURRENTLY WORKING WITH</h2>
+              <div className="flex flex-wrap gap-3 sm:gap-4 justify-center sm:justify-start">
                 {[
                   { src: "assets/ts.png", name: "TypeScript", width: 40, current: true, intermediate: true },
                   { src: "assets/js.png", name: "JavaScript", width: 40, current: true, intermediate: true },
@@ -112,24 +112,24 @@ export default function Resume() {
                   { src: "assets/figma.png", name: "Figma", width: 40, current: true, basic: true },
                 ].map((tech, index) => (
                   <div key={index} className="flex flex-col items-center justify-center gap-2 min-w-[60px] relative">
-                    <div className="w-10 h-10 flex items-center justify-center">
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center">
                       <Image src={tech.src} alt={tech.name} width={tech.width} height={40} className="object-contain" />
                     </div>
-                    <span className="text-xs text-slate-600 text-center leading-tight">{tech.name}</span>
-                    {tech.current && <Badge className="text-[10px] px-1 py-0 h-4 bg-green-100 text-green-700 border-green-300 hover:bg-green-100">Current</Badge>}
-                    {tech.intermediate && <Badge className="text-[10px] px-1 py-0 h-4 bg-green-100 text-green-700 border-green-300 hover:bg-green-100">Intermiediate</Badge>}
-                    {tech.basic && <Badge className="text-[10px] px-1 py-0 h-4 bg-green-100 text-green-700 border-green-300 hover:bg-green-100">Basic</Badge>}
+                    <span className="text-[10px] sm:text-xs text-slate-600 text-center leading-tight">{tech.name}</span>
+                    {tech.current && <Badge className="text-[8px] sm:text-[10px] px-1 py-0 h-3 sm:h-4 bg-green-100 text-green-700 border-green-300 hover:bg-green-100">Current</Badge>}
+                    {tech.intermediate && <Badge className="text-[8px] sm:text-[10px] px-1 py-0 h-3 sm:h-4 bg-green-100 text-green-700 border-green-300 hover:bg-green-100">Intermediate</Badge>}
+                    {tech.basic && <Badge className="text-[8px] sm:text-[10px] px-1 py-0 h-3 sm:h-4 bg-green-100 text-green-700 border-green-300 hover:bg-green-100">Basic</Badge>}
                   </div>
                 ))}
               </div>
             </div>
 
             <div>
-              <h2 className="text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">Education</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">Education</h2>
 
               <div className="space-y-3">
                 <div>
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-0">
                     <h3 className="font-bold text-slate-800 text-sm">SMK Telkom 2 Medan</h3>
                     <span className="text-xs text-slate-600">2017 - 2020</span>
                   </div>
@@ -137,7 +137,7 @@ export default function Resume() {
                 </div>
 
                 <div>
-                  <div className="flex justify-between items-center">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-1 sm:gap-0">
                     <h3 className="font-bold text-slate-800 text-sm">Telkom University Purwokerto</h3>
                     <span className="text-xs text-slate-600">2020 - 2024</span>
                   </div>
@@ -145,39 +145,13 @@ export default function Resume() {
                 </div>
               </div>
             </div>
-
-            {/* Tech Stack Currenly */}
-            {/* <div>
-              <h2 className="text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">NOW I&apos;M WORKING WITH</h2>
-              <div className="flex flex-wrap gap-4">
-                {[
-                  { src: "assets/codeigniter.png", name: "CodeIgniter", width: 40 },
-                  { src: "assets/angularjs.png", name: "Angular", width: 40 },
-                  { src: "assets/html-5.png", name: "HTML5", width: 40 },
-                  { src: "assets/css-3.png", name: "CSS3", width: 40 },
-                  { src: "assets/ionic.png", name: "Ionic", width: 40 },
-                  { src: "assets/ts.png", name: "TypeScript", width: 40 },
-                  { src: "assets/js.png", name: "JavaScript", width: 40 },
-                  { src: "assets/tailwindcss.png", name: "Tailwind CSS", width: 40 },
-                  { src: "assets/postgres.png", name: "PostgreSQL", width: 40 },
-                  { src: "assets/mysql.png", name: "MySQL", width: 40 },
-                ].map((tech, index) => (
-                  <div key={index} className="flex flex-col items-center justify-center gap-2 min-w-[60px]">
-                    <div className="w-10 h-10 flex items-center justify-center">
-                      <Image src={tech.src} alt={tech.name} width={tech.width} height={40} className="object-contain" />
-                    </div>
-                    <span className="text-xs text-slate-600 text-center leading-tight">{tech.name}</span>
-                  </div>
-                ))}
-              </div>
-            </div> */}
           </div>
 
-          {/* Right Column - 5 columns */}
-          <div className="col-span-5 space-y-6">
+          {/* Right Column - 5 columns on desktop, full width on mobile */}
+          <div className="lg:col-span-5 space-y-6">
             {/* Certification/Publications */}
             <div>
-              <h2 className="text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">CERTIFICATION/PUBLICATIONS</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">CERTIFICATION/PUBLICATIONS</h2>
               <div className="space-y-4">
                 <div>
                   <h4 className="font-semibold text-slate-800 text-sm">Certificate of competence: Junior Web Developer</h4>
@@ -241,22 +215,22 @@ export default function Resume() {
 
             {/* Work Experience */}
             <div>
-              <h2 className="text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">WORK EXPERIENCE</h2>
+              <h2 className="text-lg sm:text-xl font-bold text-slate-700 mb-4 uppercase tracking-wide">WORK EXPERIENCE</h2>
 
               <div className="space-y-5">
                 <div>
-                  <div className="flex justify-between items-start mb-2">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1 sm:gap-0">
                     <div>
                       <h3 className="font-bold text-slate-800 text-sm">INTERN AS SYSTEM ANALYST</h3>
                       <p className="text-sm text-slate-600">SYSTEM ANALYST</p>
                     </div>
-                    <div className="text-right">
+                    <div className="sm:text-right">
                       <p className="text-sm font-semibold text-slate-800">MEDAN, Indonesia</p>
                       <p className="text-xs text-slate-600">JULY. 2023 - SEPT 2023</p>
                     </div>
                   </div>
                   <p className="text-xs text-blue-600 font-semibold mb-2">REACT - HTML - CSS- TAILWINDCSS - Figma - Photoshop</p>
-                  <div className="text-sm text-slate-600 space-y-1">
+                  <div className="text-xs sm:text-sm text-slate-600 space-y-1">
                     <p>
                       <span className="font-semibold">Projects</span> → ANALYZE SYSTEM NEEDS AND IMPLEMENT IT WITH REACT AND HTMLL WITH TAILWINDCSS
                     </p>
@@ -264,18 +238,18 @@ export default function Resume() {
                 </div>
 
                 <div>
-                  <div className="flex justify-between items-start mb-2">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1 sm:gap-0">
                     <div>
                       <h3 className="font-bold text-slate-800 text-sm">Freelance Web Developer</h3>
                       <p className="text-sm text-slate-600">Frontend</p>
                     </div>
-                    <div className="text-right">
+                    <div className="sm:text-right">
                       <p className="text-sm font-semibold text-slate-800">Remote, Indonesia</p>
                       <p className="text-xs text-slate-600">Oct. 2023 - Present</p>
                     </div>
                   </div>
                   <p className="text-xs text-blue-600 font-semibold mb-2">React - Node - Express - MySQL - Figma - Photoshop</p>
-                  <div className="text-sm text-slate-600 space-y-1">
+                  <div className="text-xs sm:text-sm text-slate-600 space-y-1">
                     <p>
                       <span className="font-semibold">Projects</span> → Make websites both front and backend using React, Node, Express, MySQL for Student Final Project With 2 Other Members While I Work on React
                     </p>
@@ -286,18 +260,18 @@ export default function Resume() {
                 </div>
 
                 <div>
-                  <div className="flex justify-between items-start mb-2">
+                  <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start mb-2 gap-1 sm:gap-0">
                     <div>
                       <h3 className="font-bold text-slate-800 text-sm">PT Adhikari Inovasi Indonesia (AdhivasIndo)</h3>
                       <p className="text-sm text-slate-600">Junior Web Developer</p>
                     </div>
-                    <div className="text-right">
+                    <div className="sm:text-right">
                       <p className="text-sm font-semibold text-slate-800">Bandung, Indonesia</p>
                       <p className="text-xs text-slate-600">Nov. 2024 - Present</p>
                     </div>
                   </div>
                   <p className="text-xs text-blue-600 font-semibold mb-2">Angular - TypeScript - Laravel (Frontend) CodeIgniter 4 (Backend)</p>
-                  <div className="text-sm text-slate-600 space-y-1">
+                  <div className="text-xs sm:text-sm text-slate-600 space-y-1">
                     <p className="font-semibold">Projects</p>
                     <p>• Developed and maintained responsive web and mobile applications using Tailwind CSS to ensure seamless user experience.</p>
                     <p>• Implemented Role-Based Access Control (RBAC) to enhance security and user management</p>
@@ -312,55 +286,54 @@ export default function Resume() {
           </div>
         </div>
       </div>
-      {/* <div className="min-w-full border-2 border-red-500"> */}
-      <div className="max-w-7xl mx-auto px-8 py-6">
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         {/* Skills Section - Full Width Horizontal */}
         <div className="border-t border-slate-200 pt-6">
-          <h2 className="text-xl font-bold text-slate-700 mb-6 uppercase tracking-wide text-center">SKILLS & EXPERTISE</h2>
+          <h2 className="text-lg sm:text-xl font-bold text-slate-700 mb-6 uppercase tracking-wide text-center">SKILLS & EXPERTISE</h2>
 
           <div className="flex flex-wrap justify-center gap-2 max-w-6xl mx-auto min-w-full">
             {/* Technical Skills */}
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-blue-50 border-blue-200 text-blue-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-blue-50 border-blue-200 text-blue-700">
               REST API
             </Badge>
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-blue-50 border-blue-200 text-blue-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-blue-50 border-blue-200 text-blue-700">
               MERN Stack
             </Badge>
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-blue-50 border-blue-200 text-blue-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-blue-50 border-blue-200 text-blue-700">
               MySQL
             </Badge>
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-blue-50 border-blue-200 text-blue-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-blue-50 border-blue-200 text-blue-700">
               MVC Architecture
             </Badge>
 
             {/* Design Skills */}
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-green-50 border-green-200 text-green-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-green-50 border-green-200 text-green-700">
               UI/UX Design
             </Badge>
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-green-50 border-green-200 text-green-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-green-50 border-green-200 text-green-700">
               Figma
             </Badge>
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-green-50 border-green-200 text-green-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-green-50 border-green-200 text-green-700">
               Photoshop
             </Badge>
 
             {/* Soft Skills */}
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-purple-50 border-purple-200 text-purple-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-purple-50 border-purple-200 text-purple-700">
               Problem Solving
             </Badge>
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-purple-50 border-purple-200 text-purple-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-purple-50 border-purple-200 text-purple-700">
               Teamwork
             </Badge>
 
             {/* Languages */}
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-orange-50 border-orange-200 text-orange-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-orange-50 border-orange-200 text-orange-700">
               English - Conversational
             </Badge>
-            <Badge variant="outline" className="text-xs px-3 py-1 bg-orange-50 border-orange-200 text-orange-700">
+            <Badge variant="outline" className="text-xs px-2 sm:px-3 py-1 bg-orange-50 border-orange-200 text-orange-700">
               Bahasa Indonesia - Native
             </Badge>
           </div>
-          {/* </div> */}
         </div>
       </div>
     </div>
