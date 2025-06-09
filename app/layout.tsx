@@ -75,7 +75,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="canonical" href="https://your-vercel-domain.vercel.app" />
+        <link rel="canonical" href="https://yoganaden.vercel.app/" />
+        <meta name="google-site-verification" content="fev1LPl5A-ZtQXLQiL711g5dAEWTltYXvM1WKvB5jxI" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
