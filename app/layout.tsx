@@ -64,10 +64,10 @@ export const metadata: Metadata = {
     images: ["/og-image.png"],
   },
   verification: {
-    google: "your-google-verification-code", // Add after setting up Google Search Console
+    google: "4T0Johnr9esEktz1w8CpRdZP05YF4mshIMrpa5ZJ9qM",
   },
   alternates: {
-    canonical: "https://yoganaden.vercel.app/", // Replace with your actual URL
+    canonical: "https://yoganaden.vercel.app/",
   },
 };
 
