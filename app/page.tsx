@@ -5,8 +5,19 @@ import { Phone, Mail, Github } from "lucide-react";
 import Image from "next/image";
 
 export default function Resume() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    name: "Yoga Naden",
+    jobTitle: "Fullstack Developer",
+    description: "Junior Fullstack Developer specializing in React, Angular, TypeScript",
+    url: "https://your-vercel-domain.vercel.app",
+    sameAs: ["https://github.com/Nadenbogeee", "https://www.linkedin.com/in/yoga-naden/"],
+    knowsAbout: ["React", "Angular", "TypeScript", "JavaScript", "Web Development", "Frontend Development"],
+  };
   return (
     <div className="min-h-screen bg-white font-sans">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* Header Section - Dark Blue */}
       <div className="bg-slate-700 text-white px-8 py-6">
         <div className="max-w-7xl mx-auto">
